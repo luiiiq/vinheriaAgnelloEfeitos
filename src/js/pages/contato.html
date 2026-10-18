@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="comércio de vinhos, empresa, loja virtual, e-commerce ">
+    <meta name="description" content="Conheça a Vinheria Agnello, uma empresa familiar com mais de 15 anos de tradição em vinhos nacionais e internacionais, atendimento especializado, que busca expandir seus negócios com um e-commerce personalizado.">
+    <title>Vinheria Agnello -  Contato</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <header class="headerSuave">
+        <nav>
+            <ul class="navegacaoLista">
+                <li><a href="../pages/contato.html">contato</a></li>
+                <li><a href="../../../index.html#equipe">equipe</a></li>
+                <li><a href="../../../index.html#historia">história</a></li>
+                <li><a href="../pages/vinhos.html">vinhos</a></li>
+                <li><a href="./clientes.html">clientes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="conteudoSuave">
+        <h2 class="tituloPrincipal headings">Contato</h2>
+        <h6 class="subTituloContato">Entre em contato se precisar, estamos aqui para ajudar você a escolher o vinho ideal</h6>
+        <form class="formulario">
+            <fieldset class="campoForm">
+                <legend>Dados Pessoais</legend>
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+            </fieldset>
+
+            <fieldset class="campoGenero">
+                <legend>Gênero</legend>
+
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="feminino">Feminino</label>
+
+                <input type="radio" id="masculino" name="genero" value="masculino">
+                <label for="masculino">Masculino</label>
+
+                <input type="radio" id="outros" name="genero" value="outros">
+                <label for="outros">Outros</label>
+            </fieldset>
+
+            <fieldset class="campoForm">
+                <legend>Assunto do contato</legend>
+
+                <label for="assunto">Selecione o assunto:</label>
+
+                <select id="assunto" name="assunto" required>
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="duvidas">Dúvidas sobre vinhos</option>
+                    <option value="harmonizacao">Harmonizações</option>
+                    <option value="pedidos">Informações sobre pedidos</option>
+                    <option value="sugestoes">Sugestões</option>
+                    <option value="outros">Outros assuntos</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="campoForm">
+                <legend>Sua mensagem</legend>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua dúvida ou mensagem..." rows="8" required></textarea>
+            </fieldset>
+            <button id="button" type="submit">ENVIAR</button>
+        </form>
+    </section>
+    <section class="contatoImg">
+        <img src="../../assets/imgs/contato.jpg" alt="Imagem de Contato" title="Contato">
+    </section>
+    <footer class="footer">
+        <p>Todos os direitos reservados</p>
+        <h5><a href="../../../index.html">Vinheria Agnello ©</a></h5>
+    </footer>
+</body>
+</html>

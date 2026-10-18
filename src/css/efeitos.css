@@ -1,0 +1,64 @@
+.headerSuave {
+    animation: headerTransicao 0.4s ease-in-out;
+}
+
+@keyframes headerTransicao {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.conteudoSuave {
+    animation: conteudoTransicao 0.7s ease-in-out;
+}
+
+@keyframes conteudoTransicao {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.descricaoVinhos img {
+    animation: revelarVinho 2s infinite ease-in-out alternate;
+    transform-origin: center;
+    transition: all 0.4s ease;
+}
+
+.descricaoVinhos img:hover {
+    animation-play-state: paused;
+}
+
+@keyframes revelarVinho {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1.15);
+    }
+}
+
+.videoVinhos {
+    animation: rotacionarVideo 1.5s ease-out;
+}
+
+@keyframes rotacionarVideo {
+    from {
+        opacity: 0;
+        transform: rotate(-180deg) scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+    }
+}

@@ -1,0 +1,309 @@
+@import url("./efeitos.css");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f7f2f2;
+}
+
+main, .sobreVinhos {
+    padding: 40px;
+}
+
+::selection {
+    background-color: rgb(136, 3, 3);
+    color: #f7f2f2;
+}
+
+a:active {
+    color: #4af507 !important;
+}
+
+.navegacaoLista {
+    font-family:'Poppins', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-left: 1rem;
+    list-style: square;
+    padding: 2rem;
+}
+
+.navegacaoLista a {
+    color: #363333;
+    text-decoration: none;
+}
+
+.headings {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tituloPrincipal {
+    padding: 10px 0;
+    font-size: 45px;
+    text-align: center;
+    justify-self: center;
+    position: relative;
+}
+
+.tituloPrincipal::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    left: -30px;
+    top: 45%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(rgb(136, 3, 3), rgb(214, 11, 11));
+}
+.tituloPrincipal::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    right: -30px;
+    top: 45%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(rgb(136, 3, 3), rgb(214, 11, 11));
+}
+
+.imagemIntro img {
+    width: 900px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.historiaPrincipal, .equipe {
+    padding-top: 15px;
+}
+
+.historiaPrincipal p::first-letter {
+    font-size: 60px;
+    font-family: "Italianno", Georgia, 'Times New Roman', Times, serif;
+    float: left;
+    line-height: 0.8;
+    padding: 5px;
+    margin-right: 3px;
+}
+
+.historiaPrincipal h2 {
+    font-size: 28px;
+}
+
+.historiaPrincipal p, .sobreVinhos p, .clientes p {
+    font-family:'Poppins', Arial, sans-serif;
+    max-width: 70vw;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.linkVinhos, .sobreVinhos a {
+    color: rgb(136, 3, 3);
+}
+
+.linkVinhos:hover, .sobreVinhos a:hover {
+    color: rgb(214, 11, 11);
+}
+
+.equipe h3 {
+    padding: 15px 0;
+    font-size: 25px;
+}
+
+.equipe img {
+    width: 350px;
+}
+
+.listaEquipe {
+    list-style: none;
+    font-family:'Poppins', Arial, sans-serif;
+}
+
+.listaEquipe li {
+    padding: 10px 20px;
+}
+
+.listaEquipe li:nth-child(odd) {
+    background: #e7e3e3;
+}
+
+
+.listaEquipe h4 {
+    font-size: 18px;
+    transition: all 0.4s ease;
+}
+
+.listaEquipe h4:hover {
+    color: #797676;
+}
+.listaEquipe p {
+    font-size: 17px;
+    max-width: 70vw;
+    padding-bottom: 35px;
+}
+
+.footer {
+    background-color: #181717;
+    color: #f7f2f2;
+    font-family:'Poppins', Arial, sans-serif;
+    text-align: center;
+    padding: 15px;
+}
+
+.footer p {
+    font-size: 20px;
+}
+
+.footer h5 {
+    font-size: 17px;
+}
+
+.footer a {
+    color: #f7f2f2;
+    text-decoration: none;
+}
+
+.sobreVinhos h6 {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#tabelaDeVinhos {
+    padding: 20px;
+}
+
+#tabelaDeVinhos caption {
+    font-style: italic;
+    color: rgb(128, 6, 6);
+} 
+
+.categoriasVinhos {
+    font-family:'Poppins', Arial, sans-serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #0f0f0f;
+    text-decoration: underline;
+}
+
+.descricaoVinhos {
+    font-family:'Poppins', Arial, sans-serif;
+}
+
+.descricaoVinhos td {
+    max-width: 30vw;
+    padding: 0 10px 30px 10px;
+}
+
+.descricaoVinhos img {
+    width: 150px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.subTituloContato {
+    font-family:'Poppins', Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    max-width: 40vw;
+    margin: 0 auto;
+    color: #383737;
+}
+
+.clientes {
+    padding: 30px;
+    font-family:'Poppins', Arial, sans-serif;
+}
+
+.clientes h3 {
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.clientesImg img {
+    display: block;
+    margin: 0 auto;
+    width: 800px;
+    padding: 30px;
+}
+
+.clientes iframe {
+    margin: 0 auto;
+    display: block;
+}
+
+/* Formulário */
+.formulario {
+    font-family:'Poppins', Arial, sans-serif;
+    padding: 30px;
+}
+
+.campoForm, .campoGenero {
+    padding: 10px;
+}
+
+.campoForm legend, .campoGenero legend {
+    font-size: 20px;
+    color: #363333;
+    padding: 8px;
+}
+
+.campoForm label, .campoGenero label {
+    font-size: 17px;
+    color: #0f0f0f;
+}
+
+.campoForm input, .campoForm select, .campoForm textarea {
+    font-family:'Poppins', Arial, sans-serif;
+    display: block;
+    margin-bottom: 10px;
+    width: 60%;
+    padding: 10px;
+    font-size: 17px;
+    color: #838282;
+    border: 2px solid #242323;
+    border-radius: 5px;
+}
+
+.campoForm input[type="text"]:focus,
+.campoForm input[type="email"]:focus,
+.campoForm select:focus,
+.campoForm textarea:focus {
+    border: 2px solid rgb(155, 9, 9);
+    outline: 1px solid rgb(155, 9, 9);
+}
+
+.campoGenero input {
+    margin-left: 15px;
+}
+
+#button {
+    background: rgb(165, 8, 2);
+    color: #f7f2f2;
+    border: none;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.4s ease;
+}
+
+#button:hover {
+    transform: scale(1.2);
+    background: #f7f2f2;
+    color: rgb(165, 8, 2);
+    border: 2px solid rgb(165, 8, 2);
+}
+
+.contatoImg img{
+    display:  block;
+    width: 100%;
+}
