@@ -62,3 +62,91 @@
         transform: rotate(0deg) scale(1);
     }
 }
+
+::selection {
+    background-color: rgb(136, 3, 3);
+    color: #f7f2f2;
+}
+
+a:active {
+    color: #4af507 !important;
+}
+
+.listaEquipe h4:hover {
+    color: #797676;
+}
+
+#button:hover {
+    transform: scale(1.2);
+    background: #f7f2f2;
+    color: rgb(165, 8, 2);
+    border: 2px solid rgb(165, 8, 2);
+}
+
+.tituloPrincipal::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    left: -30px;
+    top: 45%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(rgb(136, 3, 3), rgb(214, 11, 11));
+}
+.tituloPrincipal::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    right: -30px;
+    top: 45%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(rgb(136, 3, 3), rgb(214, 11, 11));
+}
+
+
+.historiaPrincipal p::first-letter {
+    font-size: 60px;
+    font-family: "Italianno", Georgia, 'Times New Roman', Times, serif;
+    float: left;
+    line-height: 0.8;
+    padding: 5px;
+    margin-right: 3px;
+}
+
+.linkVinhos:hover, .sobreVinhos a:hover {
+    color: rgb(214, 11, 11);
+}
+
+.listaEquipe li:nth-child(odd) {
+    background: #e7e3e3;
+}
+
+.campoForm input[type="text"]:focus,
+.campoForm input[type="email"]:focus,
+.campoForm select:focus,
+.campoForm textarea:focus {
+    border: 2px solid rgb(155, 9, 9);
+    outline: 1px solid rgb(155, 9, 9);
+}
+
+.navegacaoLista a {
+    position: relative;
+}
+
+.navegacaoLista a::after {
+    position: absolute;
+    content: "";
+    bottom: -4px;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(214, 11, 11);
+    display: block;
+    transition: all 0.4s;
+}
+
+.navegacaoLista a:hover::after {
+    width: 100%;
+}

@@ -13,15 +13,6 @@ main, .sobreVinhos {
     padding: 40px;
 }
 
-::selection {
-    background-color: rgb(136, 3, 3);
-    color: #f7f2f2;
-}
-
-a:active {
-    color: #4af507 !important;
-}
-
 .navegacaoLista {
     font-family:'Poppins', Arial, sans-serif;
     text-transform: uppercase;
@@ -34,6 +25,10 @@ a:active {
 .navegacaoLista a {
     color: #363333;
     text-decoration: none;
+
+}
+.navegacaoLista li {
+    margin-bottom: 10px;
 }
 
 .headings {
@@ -48,29 +43,6 @@ a:active {
     position: relative;
 }
 
-.tituloPrincipal::before {
-    position: absolute;
-    content: "";
-    display: inline-block;
-    left: -30px;
-    top: 45%;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: linear-gradient(rgb(136, 3, 3), rgb(214, 11, 11));
-}
-.tituloPrincipal::after {
-    position: absolute;
-    content: "";
-    display: inline-block;
-    right: -30px;
-    top: 45%;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: linear-gradient(rgb(136, 3, 3), rgb(214, 11, 11));
-}
-
 .imagemIntro img {
     width: 900px;
     display: block;
@@ -80,15 +52,6 @@ a:active {
 
 .historiaPrincipal, .equipe {
     padding-top: 15px;
-}
-
-.historiaPrincipal p::first-letter {
-    font-size: 60px;
-    font-family: "Italianno", Georgia, 'Times New Roman', Times, serif;
-    float: left;
-    line-height: 0.8;
-    padding: 5px;
-    margin-right: 3px;
 }
 
 .historiaPrincipal h2 {
@@ -104,10 +67,6 @@ a:active {
 
 .linkVinhos, .sobreVinhos a {
     color: rgb(136, 3, 3);
-}
-
-.linkVinhos:hover, .sobreVinhos a:hover {
-    color: rgb(214, 11, 11);
 }
 
 .equipe h3 {
@@ -128,19 +87,11 @@ a:active {
     padding: 10px 20px;
 }
 
-.listaEquipe li:nth-child(odd) {
-    background: #e7e3e3;
-}
-
-
 .listaEquipe h4 {
     font-size: 18px;
     transition: all 0.4s ease;
 }
 
-.listaEquipe h4:hover {
-    color: #797676;
-}
 .listaEquipe p {
     font-size: 17px;
     max-width: 70vw;
@@ -270,14 +221,6 @@ a:active {
     border-radius: 5px;
 }
 
-.campoForm input[type="text"]:focus,
-.campoForm input[type="email"]:focus,
-.campoForm select:focus,
-.campoForm textarea:focus {
-    border: 2px solid rgb(155, 9, 9);
-    outline: 1px solid rgb(155, 9, 9);
-}
-
 .campoGenero input {
     margin-left: 15px;
 }
@@ -294,13 +237,6 @@ a:active {
     cursor: pointer;
     letter-spacing: 1px;
     transition: all 0.4s ease;
-}
-
-#button:hover {
-    transform: scale(1.2);
-    background: #f7f2f2;
-    color: rgb(165, 8, 2);
-    border: 2px solid rgb(165, 8, 2);
 }
 
 .contatoImg img{
