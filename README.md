@@ -93,6 +93,9 @@ As imagens da tabela de vinhos aumentam e diminuem de tamanho continuamente, var
 13. Animação de rotação do vídeo (@keyframes rotacionarVideo)
 O vídeo identificado pela classe videoVinhos aparece girando de -180 graus até 0 grau, enquanto aumenta de metade do tamanho até sua escala original.
 
+14.Animação nos links de navegação
+Foi adicionada uma linha decorativa vermelha abaixo dos links do menu de navegação. Ao passar o cursor sobre um link (:hover), a linha aumenta suavemente de largura, criando um efeito visual de destaque.
+
 ## Site publicado
 
 [Acesse o site da Vinheria Agnello](https://luiiiq.github.io/vinheriaAgnelloEfeitos/)
